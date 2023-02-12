@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import roller from '../assets/roller.svg';
 import orange from '../assets/orange.svg';
 import violet from '../assets/violet.svg';
 import { TypeAnimation } from 'react-type-animation';
+import ReactMarquee from 'react-fast-marquee';
 const HomePage = () => {
   const changeColor = (color) => {
     document.getElementById('animation').style.color = color;
@@ -133,10 +134,164 @@ const HomePage = () => {
           </div>
         </div>
         {/* 3rd section */}
-        <marquee class="bg-[#f5986f] text-white font-bold text-xl p-2">
+        {/* <marquee class="bg-[#f5986f] text-white font-bold text-xl p-2">
           <span class="mr-2">🔥</span>Get 20% off on your first order
-        </marquee>
+        </marquee> */}
+        <ReactMarquee speed={100} gradient={false}>
+          {/* <hr class="border-[blue] border-2 w-full" />
+          <span class="mr-2">🔥Get 20% off on your first order</span>
+          <hr class="border-[red] border-2 w-full" /> */}
+          <div class="font-bold text-xl p-2 border-t-2 border-b-2 border-[#3fd3cb] w-full overflow-hidden">
+            <span class="mr-2 p-10 text-4xl text-[red]">
+              🔥Get 20% off on your first order
+            </span>
+            <span class="mr-2 p-10 text-4xl text-[green]">
+              ❤️Get 10% off on your first order
+            </span>
+          </div>
+        </ReactMarquee>
+        {/* 4th section */}
+        <div class="flex flex-col  ml-[7rem] mr-[7rem] lg:ml-[10rem] lg:mr-[10rem] ">
+          <span class="text-2xl font-bold">What Our Customers Say</span>
+          <div class="flex flex-col">
+            <div class="p-10 rounded-2xl flex justify-between ">
+              <div class="flex flex-col gap-6   rounded-2xl w-[50%]">
+                <img src={orange} alt="orange" class="h-20 w-20 rounded-full" />
+                <h1 class="text-[24px] font-bold">More leads and sales</h1>
+                <p class="text-[20px] font-bold-200 w-[90%]">
+                  With content from Semrush Content Marketplace, you’ll cover
+                  your audience’s needs and interests, which will improve your
+                  site conversion rates and increase leads, both in quantity and
+                  quality.
+                </p>
+              </div>
+              <div class="flex flex-col gap-6   rounded-2xl w-[50%]">
+                <img src={orange} alt="orange" class="h-20 w-20 rounded-full" />
+                <h1 class="text-[24px] font-bold">More leads and sales</h1>
+                <p class="text-[20px] font-bold-200 w-[90%]">
+                  With content from Semrush Content Marketplace, you’ll cover
+                  your audience’s needs and interests, which will improve your
+                  site conversion rates and increase leads, both in quantity and
+                  quality.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <div class="p-10 rounded-2xl flex justify-between ">
+              <div class="flex flex-col gap-6   rounded-2xl w-[50%]">
+                <img src={orange} alt="orange" class="h-20 w-20 rounded-full" />
+                <h1 class="text-[24px] font-bold">More leads and sales</h1>
+                <p class="text-[20px] font-bold-200 w-[90%]">
+                  With content from Semrush Content Marketplace, you’ll cover
+                  your audience’s needs and interests, which will improve your
+                  site conversion rates and increase leads, both in quantity and
+                  quality.
+                </p>
+              </div>
+              <div class="flex flex-col gap-6   rounded-2xl w-[50%]">
+                <img src={orange} alt="orange" class="h-20 w-20 rounded-full" />
+                <h1 class="text-[24px] font-bold">More leads and sales</h1>
+                <p class="text-[20px] font-bold-200 w-[90%]">
+                  With content from Semrush Content Marketplace, you’ll cover
+                  your audience’s needs and interests, which will improve your
+                  site conversion rates and increase leads, both in quantity and
+                  quality.
+                </p>
+              </div>
+            </div>
+            <div class="flex justify-center ">
+              <button class="bg-[#f5986f] text-white p-4 rounded-[6px]">
+                Order Content Now
+              </button>
+            </div>
+          </div>
+        </div>
+        {/* 5th section */}
+        <div class="flex flex-col  ml-[7rem] mr-[7rem] lg:ml-[10rem] lg:mr-[10rem] ">
+          <span class="text-2xl font-bold">What Our Customers Say</span>
+          <div class="flex flex-col ">
+            <div class="mt-4 rounded-2xl flex justify-between ">
+              <div class="flex flex-col gap-6   rounded-2xl w-[50%]">
+                <h1 class="text-[24px] font-bold ">
+                  Optimize your Content Workflows with our Content Writing
+                  Services
+                </h1>
+                <p class="text-[20px] font-bold-200 w-[90%]">
+                  Take advantage of our platform features to streamline your
+                  content management activities.
+                </p>
+              </div>
+              {/* card */}
+              <div class="  w-[50%] rounded-2xl ">
+                <div class=" gap-4 shadow-lg rounded-2xl p-4 border-2 ">
+                  <h1 class="text-[24px] font-bold">More leads and sales</h1>
+                  <div class="flex flex-col bg-[pink] rounded-2xl p-4 h-[120px]">
+                    <h1 class="text-[24px] font-bold">More leads and sales</h1>
+                  </div>
+                  <h2 class="text-[20px] ">More leads and sales</h2>
+                  <p class="text-[20px] font-bold-200 w-[90%]">
+                    With content from Semrush Content Marketplace, you’ll cover
+                    your audience’s needs and interests, which will improve your
+                    site conversion rates and increase leads, both in quantity
+                    and quality.
+                  </p>
+                </div>
+              </div>
 
+            </div>
+
+          </div>
+          <div class="flex flex-col">
+          <div class="  w-[50%] rounded-2xl ">
+                <div class=" gap-4 shadow-lg rounded-2xl p-4 border-2 ">
+                  <h1 class="text-[24px] font-bold">More leads and sales</h1>
+                  <div class="flex flex-col bg-[pink] rounded-2xl p-4 h-[120px]">
+                    <h1 class="text-[24px] font-bold">More leads and sales</h1>
+                  </div>
+                  <h2 class="text-[20px] ">More leads and sales</h2>
+                  <p class="text-[20px] font-bold-200 w-[90%]">
+                    With content from Semrush Content Marketplace, you’ll cover
+                    your audience’s needs and interests, which will improve your
+                    site conversion rates and increase leads, both in quantity
+                    and quality.
+                  </p>
+                </div>
+              </div>
+            <div class="p-10 rounded-2xl flex justify-between ">
+            <div class="  w-[50%] rounded-2xl ">
+                <div class=" gap-4 shadow-lg rounded-2xl p-4 border-2 ">
+                  <h1 class="text-[24px] font-bold">More leads and sales</h1>
+                  <div class="flex flex-col bg-[pink] rounded-2xl p-4 h-[120px]">
+                    <h1 class="text-[24px] font-bold">More leads and sales</h1>
+                  </div>
+                  <h2 class="text-[20px] ">More leads and sales</h2>
+                  <p class="text-[20px] font-bold-200 w-[90%]">
+                    With content from Semrush Content Marketplace, you’ll cover
+                    your audience’s needs and interests, which will improve your
+                    site conversion rates and increase leads, both in quantity
+                    and quality.
+                  </p>
+                </div>
+              </div>
+              <div class="  w-[50%] rounded-2xl ">
+                <div class=" gap-4 shadow-lg rounded-2xl p-4 border-2 ">
+                  <h1 class="text-[24px] font-bold">More leads and sales</h1>
+                  <div class="flex flex-col bg-[pink] rounded-2xl p-4 h-[120px]">
+                    <h1 class="text-[24px] font-bold">More leads and sales</h1>
+                  </div>
+                  <h2 class="text-[20px] ">More leads and sales</h2>
+                  <p class="text-[20px] font-bold-200 w-[90%]">
+                    With content from Semrush Content Marketplace, you’ll cover
+                    your audience’s needs and interests, which will improve your
+                    site conversion rates and increase leads, both in quantity
+                    and quality.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
